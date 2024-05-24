@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeatherApp</title>
+    <link  href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="back">
+            <div class="nav">
+                <div class="logo">
+                    <img src="App_Logo.png" alt="">
+                        <h1>find Weather here</h1>
+                </div>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Enter Location Name">
+                    <button id="searchbtn" ><i class="ri-search-eye-line"></i></button>
+                </div>
+            </div>
+            <div class="weathershow">
+                <div class="image">
+                    <img id="weatherimage" src="clear.png" alt="">
+                </div>
+                <div class="info">
+                    <h1 id="head">Weather of <span id="headtext">delhi</span></h1>
+                    <h1><span id="temp">20</span><sup>°C</sup></h1>
+                    <p id="description">description</p>
+                    <h3><span id="cityname">cityname</span>, <span id="countrycode">country</span></h3>
+                    <div class="moreinfo">
+                        <div class="humid">
+                            <i class="ri-water-percent-fill"></i> 
+                            <div class="humidwind">
+                                <h4 id="humidity">52%</h4>
+                                <h4>humidity</h4>
+                            </div>
+                        </div>
+                        <div class="humid">
+                            <i class="ri-windy-line"></i> 
+                            <div class="humidwind">
+                                <h4 id="windspeed">5 km/h</h4>
+                                <h4>wind speed</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
